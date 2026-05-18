@@ -7,6 +7,15 @@
 [![Release](https://img.shields.io/github/v/release/elliottbache/tls_line_protocol)](https://github.com/elliottbache/tls_line_protocol/releases)
 [![License: GPL-3.0](https://img.shields.io/badge/license-%20%20GNU%20GPLv3%20-green?style=plastic)](https://github.com/elliottbache/tls_line_protocol/blob/main/LICENSE)
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-20-blue?logo=cplusplus&logoColor=white)
+![OpenSSL](https://img.shields.io/badge/TLS-OpenSSL%20%2F%20mTLS-blue?logo=openssl&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-%E2%89%A53.16-blue?logo=cmake&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker&logoColor=white)
+![pytest](https://img.shields.io/badge/tests-pytest-blue?logo=pytest&logoColor=white)
+![mypy](https://img.shields.io/badge/types-mypy-blue)
+![Sphinx](https://img.shields.io/badge/docs-Sphinx-blue?logo=sphinx&logoColor=white)
+
 > **60-second summary**
 > - Ubuntu/WSL-focused minimal client/server that perform a TLS handshake, then a **HELLO → WORK → info requests → DONE** flow.
 > - WORK solved by a fast C++ helper (multi-threaded) invoked from Python.
