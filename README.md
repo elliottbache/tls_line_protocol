@@ -21,6 +21,16 @@
 > - WORK solved by a fast C++ helper (multi-threaded) invoked from Python.
 > - Fully testable: unit tests for protocol/parsing/hashing and mocked SSL/subprocess, generating throwaway certs.
 
+## What this project demonstrates
+
+A small but complete Python client/server application that exercises a real network protocol flow over TLS, with a performance-critical Proof-of-Work step delegated to a compiled C++ helper. The repo is set up like a “real” project: reproducible local/Docker runs, automated tests across Python and C++, type checking, linting/formatting, and Sphinx/Doxygen docs.
+
+- **Backend Python**: CLI-driven client/server built on Python 3.11 (sockets + `ssl`) with structured logging and clear error paths.
+- **Interop + performance**: multi-threaded C++20 POW solver (OpenSSL SHA1) invoked from Python via `subprocess`, with path/permission hardening checks.
+- **Testing (Python + C++)**: pytest unit + integration coverage (including TLS handshake behavior) plus C++ unit tests via GoogleTest/CTest.
+- **Tooling/quality**: pre-commit hooks (ruff/black/isort/codespell), mypy, and GitHub Actions CI.
+- **Docs**: Sphinx (Python API from docstrings) + Doxygen/Breathe (C++ API), published via Read the Docs.
+
 ---
 
 ## High-level flow
